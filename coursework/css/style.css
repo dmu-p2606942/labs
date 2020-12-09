@@ -1,0 +1,51 @@
+body{
+  background-image: url("../img/terrazo.png");
+  margin: 0%;
+}
+/*"By doing margin 0% allowed me to fit all elements on both pages fit to nicely to the whole pages. Furthermore,
+the background image i have chosen was mainly based on how the color really blends in with the webpage as i have gone for
+a black and red look so it was a must for me to have made the backgroud colour black."*/
+nav{
+  text-align: center;
+  margin-top: 30px;
+}
+/*"By using text allign and putting it to the center of the page, i thought was a suitable idea to do as it would be the centre of attention and needs to be if navigating from page to page"*/
+nav a{
+  text-decoration-color: red;
+  color: black;
+  padding: 10px;
+  background-color: red;
+  border-radius: 3px;
+  border: 2px black solid;
+  border-style: dashed;
+  margin: 10px;
+}
+/*"Again i have gone for the border line style to be dashed and a repeat of this represents UNITY"*/
+/*"by using the padding element i was able to centre the text properly inside the box"*/
+header{
+    color: red;
+    padding: 3px;
+    margin: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace, sans-serif;
+    background-color:black;
+    border-style: dashed;
+    text-shadow: 4px 2px rgb(194, 50, 50);
+}
+/*"Again padding helped me centre the heading comfortably, And i used monospace because it looked cool, sans-serif was used
+for default, Also i thought the text shadow was really cool so gave the header a little touch of shadow"*/
+p{
+  color: red;
+}
+footer{
+  padding-top: 7px;
+  width: 100vw;
+  overflow: hidden;
+  color: red;
+  background-color: rgb(10,32,43);
+  text-align: center;
+}
+/*By putting the width to 100vw this will fit the footer to the entire browser window, I Also
+did overflow to hidden because i didn't want any of the document collapsing onto the footer*/

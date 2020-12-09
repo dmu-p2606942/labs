@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title></title>
+    <style>
+    p{
+      margin-left: 8px;
+    }
+    .theheader{
+      color: red;
+      background-color: rgb(10, 32, 43);
+      text-align: center;
+    }
+    img{
+      width: 100%;
+    }
+    div{
+      width: 50%;
+      float: left;
+    }
+    .hol{
+      margin-top: 55px;
+      background-color: rgb(10, 32, 43);
+    }
+    section::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .pol{
+      width: 50%;
+      float: left;
+    }
+    h2{
+      color: red;
+      background-color: rgb(10, 32, 43);
+      text-align: center;
+    }
+    </style>
+    <!--"(styles) Firstly, Starting from the top i used margin left on the paragraph
+    so it was not cramped up with the image next to it, By applying the width 100% to the image
+    element allowed it to be presented on the webpage as required in the criteria, By floating
+    the div element left i was able to position the image element next to the text properly,
+    By using the section i was then able to clear the float"-->
+  </head>
+  <body>
+    <header>
+    <h1>FAST AND FURIOUS 8</h1>
+    </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">Cast Page</a>
+  </nav>
+  <section>
+   <div>
+     <h2 class="theheader">Vin Diesel</h2>
+     <img src="img/vin.jpg" alt="Vin Diesel" />
+      </div>
+   <div class="hell">
+     <p class="hol">
+       Vin Diesel was born Mark Sinclair in Alameda County, California, along with his fraternal twin brother, Paul Vincent. He was raised by his astrologer/psychologist mother, Delora Sherleen (Sinclair),
+       and adoptive father, Irving H. Vincent, an acting instructor and theatre manager.
+    </p>
+  </div>
+  <!--This div element was given a class name so the styles for the just 'div' element wasn't applied to this.-->
+    <audio controls>
+      <source src="aud/reza3.wav" type="audio/wav">
+      <source src="aud/reza3.mp3" type="audio/mpeg">
+      <p>sorry, your browser does not support the audio element. However, you can download the mp3 format <a href="aud/reza.mp3">here</a>
+    </audio>
+  </section>
+  <section> <!--This is the second section element i have used as part of the criteria we needed to talk about 2 cast members-->
+  <div class="pol">
+    <h2>Dwayne Johnson</h2>
+    <img src="img/rock.jpg" alt="Dwayne Johnson" />
+  </div>
+  <div class="hell">
+    <p class="hol">
+      Dwayne Douglas Johnson (born May 2, 1972), also known by his ring name the Rock,[4] is an American-Canadian actor, producer, businessman,
+      retired professional wrestler,[7] and former American football and Canadian football player.
+   </p>
+ </div>
+   <audio controls>
+     <source src="aud/hello.wav" type="audio/wav">
+     <source src="aud/hello.mp3" type="audio/mpeg">
+       <p>sorry, your browser does not support the audio element. However, you can download the
+         mp3 format <a href="aud/hello.mp3">here</a>
+         <!--I had trouble at first with the fallback as it would display on my webpage
+         but thankfully with the help of Mr Corah realised i needed to use an ending tag "</a>"-->
+  </audio>
+</section>
+  <footer class="thefooter">P2606942</footer>
+  </body>
+</html>

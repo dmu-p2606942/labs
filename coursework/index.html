@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--"With this viewport meta tag it'll help my webpage scale exceptionally on mobile"-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!--"This is to link this page to the external css page"-->
+    <title></title>
+    <style>
+    h2{
+      color: red;
+      margin-top: 40px;
+      margin-left: 10px;
+      text-align: center;
+    }
+    .group{
+      background-color: rgb(10, 32, 43);
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    .thefamily{
+      margin-top: 30px;
+      margin-left: 8px;
+      width: 96%;
+      height: 75%;
+      border: 2px red solid;
+      border-style: dashed;
+    }
+    .thechild{
+      width: 98%;
+      margin-top: 3%;
+      margin-bottom: 5%;
+      margin-right: 5%;
+    }
+  </style>
+  <!--"(image element)i adjusted the width of the (.thefamily) to 96% so it is inline with the Title"-->
+  <!--"(image element) I also decided to keep the border style of the image to dashed so it looks the same as the Title"-->
+  <!--"By using the (margin) i was able to structure each element and make them look presentable on the page"-->
+  </head>
+  <body>
+    <header>
+    <h1>FAST AND FURIOUS 8</h1>
+    </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">Cast Page</a>
+  </nav>
+  <!--"By using the nav element i was able to help the viewer navigate from the home page to the cast page
+  Furthermore, By using Nav this shows a good well use of html semantic elements"-->
+  <div>
+    <img class="thefamily" src="img/furious.JPG" alt="Thecrew"/>
+
+  </div>
+
+  <div class="group">
+  <!--"By using the class element i was able to differenciate this div element to the others as i knew i would need to apply specific styles to only this div element"-->
+    <h2>Synopsis</h2>
+    <p>With Dom and Letty married, Brian and Mia retired and the rest of the crew exonerated, the globe-trotting team has found some semblance of a normal life.
+       They soon face an unexpected challenge when a mysterious woman named Cipher forces Dom to betray them all. Now, they must unite to bring home the man who made them a family and stop Cipher from unleashing chaos.
+       Click the link and then search in Fast and furious 8 to <a href="https://banterflix.com/fast-furious-8/.html">Find out more</a>
+       <!--"this is an external link as required in the criteria"-->
+    </p>
+
+  </div>
+  <div>
+    <video class="thechild"controls="true" width="100%">
+      <source src="vid/Trailer.mp4" type="video/webm" />
+      <source src="vid/Trailer.webm" type="video/mp4" />
+    <!--"The 2 different formats required on the criteria"-->
+      <p>Sorry, your browser does not support the video element, you can download the video <a href="vid/Trailer.mp4">here</a>.</p>
+    <!--"The Fallback for browsers which does not support the video element as required on the criteria"-->
+    </video>
+  </div>
+  <footer class="thefooter">P2606942</footer>
+
+  </body>
+</html>
