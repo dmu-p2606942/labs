@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- "With this viewport meta tag it'll help my webpage scale exceptionally on mobile"-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!--"This is to link this page to the external css page"-->
+    <title></title>
+    <style>
+    h2{
+      color: white;
+      float: left;
+      border: 2px red solid;
+      border-style: dashed;
+    }
+    h3{
+      float: left;
+      color: white;
+      width: 50%;
+      border: 2px red solid;
+      border-style: dashed;
+    }
+    body{
+      margin:0;
+    }
+    img{
+      width: 100%;
+      margin-top: 35px;
+      border: 2px red solid;
+      border-style: dashed;
+    }
+    .col{
+      width: 50%;
+      float: left;
+    }
+
+    .justnoel{
+      margin-top: 30px;
+      border: 2px red solid;
+      padding: 2px;
+      border-style: dashed;
+    }
+    .justnoel{
+      margin-left: 10px;
+    }
+    p{
+    border: 2px red solid;
+    padding: 2px;
+    border-style: dashed;
+    margin-left: 10px;
+    }
+    p{
+      margin-top: 40px;
+    }
+    section::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+     @keyframes fallingsquares {
+      0% {
+        top: 0;
+        transform: rotate(0deg);
+        opacity: 0.5;
+      }
+      100% {
+        top: 200vh;
+        transform: rotate(720deg);
+        opacity: 1.5;
+      }
+    }
+
+     .littlesquare{
+      top: 101%;
+      width: 40px;
+      height: 40px;
+      background-color: maroon;
+      position: absolute;
+      animation: fallingsquares 4s infinite ease-in;
+      z-index: -1;
+    }
+
+    #ls1 {
+      left: 60%;
+      animation-delay: 0.5s;
+    }
+
+    #ls2 {
+      left: 65%;
+      animation-delay: 1.5s;
+    }
+
+    #ls3 {
+      left: 70%;
+      animation-delay: 1s;
+    }
+
+    #ls4 {
+      left: 75%;
+      animation-delay: 2s;
+    }
+
+    #ls5 {
+      left: 80%;
+      animation-delay: 0.7s;
+    }
+
+    #ls6 {
+      left: 85%;
+      animation-delay: 1.3s;
+    }
+
+    #ls7 {
+      left: 90%;
+      animation-delay: 1s;
+    }
+
+    #ls8 {
+      left: 78%;
+      animation-delay: 1.5s;
+    }
+
+    #ls9 {
+      left: 55%;
+      animation-delay: 2s;
+    }
+
+    #ls10 {
+      left: 45%;
+      animation-delay: 1.6s;
+    }
+
+    #ls11 {
+      left: 40%;
+      animation-delay: 1.2s;
+    }
+
+    #ls12 {
+      left: 35%;
+      animation-delay: 1.9s;
+    }
+
+    #ls13 {
+      left: 30%;
+      animation-delay: 2.2s;
+    }
+
+    #ls14 {
+      left: 25%;
+      animation-delay: 1.4s;
+    }
+
+    #ls15 {
+      left: 20%;
+      animation-delay: 2.5s;
+    }
+
+    #ls16 {
+      left: 15%;
+      animation-delay: 2.3s;
+    }
+
+    #ls17 {
+      left: 10%;
+      animation-delay: 1.3s;
+    }
+
+    #ls18 {
+      left: 6%;
+      animation-delay: 1.8s;
+    }
+
+    #ls19 {
+      left: 1%;
+      animation-delay: 1.9s;
+    }
+
+
+    </style>
+    <!--"By using section and (after), this helped enable the next piece of content to go where i wanted it to and not
+    just whereve it could fit into the page. The block property would force the element to start from the next line.Furthermore,
+    by using the theme of a dashed style format for every element i wanted this to represent as unity. By using margin i was able
+    to put some distance between each elements. The reason i had to separate the (margin-left on justnoel) to the styles above it
+    was because the rules on (margin-left) and the rules on margin top would clash.Furthermore, animations was needed and to do This
+    i wanted square shapes which were div elements to fall from the top of the page and thanks to keyframes i was enabled to do so.
+    after using "id" for separate div elememts i was able to specifiy what different rules i wanted to apply on each littlesquare
+    for example, time delay was vital as i didn't want the shapes to all fall down at the same pace. By using "left" i was able to spread
+    the little squares around the page.
+    "-->
+  </head>
+  <body>
+    <header>
+      <h1>Brotherhood</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Cast</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <!--"By using the nav element i was able to help the viewer navigate from the home page to the cast page
+  Furthermore, By using Nav this shows a good well use of html semantic elements"-->
+  <section>
+  <div class="col">
+    <img class="Noel"src="img/noel.jpg" alt="Noel Clarke" />
+  </div>
+  <div class="col">
+    <p class="justnoel">
+      Noel Anthony Clarke who was born on the 6th off December 1975, is an english actor and also a screenwriter, directer
+      and a comic book writer. He also played Micky Smith in Doctor Who. Clarke is known as sam in films such as, Kiddulthood,
+      Adulthood and brotherhood. These films he also wrote and directed which is pretty talented to say the least.
+    </p>
+  </div>
+</section>
+<section>
+<div class="col">
+   <img src="img/ajala.jpg" alt="David Ajala" />
+</div>
+<div class="col">
+  <p>
+    David Ajala who was born on the 21st May 1986, has starred in many films, such as The Dark Knight, 2016 seekers,
+    kidulthood, adulthood and brotherhood. He has also performed in a midsummer night's dream. He has also appeared
+    on Doctor who and Beowulf (Return to the Shieldlands, Nightflyers and falling water).
+  </p>
+</div>
+</section>
+<section>
+  <div class="col">
+    <img src="img/burkmar.jpg" alt="Mahalla Burkmar" />
+  </div>
+  <div class="col">
+    <p>
+      mahalla who was born on may 1st 1998 is not only an actress but a songwriter and a singer. She has two studio albums.
+      In brotherhood she was known as Thea. Mahalla is from syston in leicester. As a child she would often spend her breaks
+      writing songs.
+    </p>
+  </div>
+
+  <div>
+    <h2>Interviews with the cast</h2>
+  </div>
+
+  <div>
+    <h3>Noel Clarke</h3>
+    <audio controls>
+      <source src="aud/Female_2.wav" type="audio/wav">
+      <source src="aud/Female_2 copy.mp3" type="audio/mpeg">
+      <p>sorry, your browser does not support the audio element. However, you can download the mp3 format <a href="aud/Female_2 copy.mp3">here</a>
+    </audio>
+  </div>
+  <div>
+    <h3>David Ajalla</h3>
+    <audio controls>
+      <source src="aud/Female_2.wav" type="audio/wav">
+      <source src="aud/Female_2 copy.mp3" type="audio/mpeg">
+      <p>sorry, your browser does not support the audio element. However, you can download the mp3 format <a href="aud/Female_2 copy.mp3">here</a>
+    </audio>
+  </div>
+  <div>
+    <h3>Mahalla Burkmar</h3>
+    <audio controls>
+      <source src="aud/Female_2.wav" type="audio/wav">
+      <source src="aud/Female_2 copy.mp3" type="audio/mpeg">
+      <p>sorry, your browser does not support the audio element. However, you can download the mp3 format <a href="aud/Female_2 copy.mp3">here</a>
+    </audio>
+  </div>
+
+  <div class="littlesquare" id="ls1"></div>
+  <div class="littlesquare" id="ls2"></div>
+  <div class="littlesquare" id="ls3"></div>
+  <div class="littlesquare" id="ls4"></div>
+  <div class="littlesquare" id="ls5"></div>
+  <div class="littlesquare" id="ls6"></div>
+  <div class="littlesquare" id="ls7"></div>
+  <div class="littlesquare" id="ls8"></div>
+  <div class="littlesquare" id="ls9"></div>
+  <div class="littlesquare" id="ls10"></div>
+  <div class="littlesquare" id="ls11"></div>
+  <div class="littlesquare" id="ls12"></div>
+  <div class="littlesquare" id="ls13"></div>
+  <div class="littlesquare" id="ls14"></div>
+  <div class="littlesquare" id="ls15"></div>
+  <div class="littlesquare" id="ls16"></div>
+  <div class="littlesquare" id="ls17"></div>
+  <div class="littlesquare" id="ls18"></div>
+  <div class="littlesquare" id="ls19"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="thefooter">P2606942</footer>
+  </body>
+</html>

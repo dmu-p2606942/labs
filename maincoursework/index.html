@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- "With this viewport meta tag it'll help my webpage scale exceptionally on mobile"-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!--"This is to link this page to the external css page"-->
+    <title></title>
+    <style>
+    @keyframes fallingsquares {
+     0% {
+       top: 0;
+       transform: rotate(0deg);
+       opacity: 0.5;
+     }
+     100% {
+       top: 200vh;
+       transform: rotate(720deg);
+       opacity: 1.5;
+     }
+   }
+
+    .littlesquare{
+     top: 101%;
+     width: 40px;
+     height: 40px;
+     background-color: maroon;
+     position: absolute;
+     animation: fallingsquares 2s infinite ease-in;
+     z-index: -1;
+   }
+
+   #ls1 {
+     left: 60%;
+     animation-delay: 0.5s;
+   }
+
+   #ls2 {
+     left: 65%;
+     animation-delay: 1.5s;
+   }
+
+   #ls3 {
+     left: 70%;
+     animation-delay: 1s;
+   }
+
+   #ls4 {
+     left: 75%;
+     animation-delay: 2s;
+   }
+
+   #ls5 {
+     left: 80%;
+     animation-delay: 0.7s;
+   }
+
+   #ls6 {
+     left: 85%;
+     animation-delay: 1.3s;
+   }
+
+   #ls7 {
+     left: 90%;
+     animation-delay: 1s;
+   }
+
+   #ls8 {
+     left: 78%;
+     animation-delay: 1.5s;
+   }
+
+   #ls9 {
+     left: 55%;
+     animation-delay: 2s;
+   }
+
+   #ls10 {
+     left: 45%;
+     animation-delay: 1.6s;
+   }
+
+   #ls11 {
+     left: 40%;
+     animation-delay: 1.2s;
+   }
+
+   #ls12 {
+     left: 35%;
+     animation-delay: 1.9s;
+   }
+
+   #ls13 {
+     left: 30%;
+     animation-delay: 2.2s;
+   }
+
+   #ls14 {
+     left: 25%;
+     animation-delay: 1.4s;
+   }
+
+   #ls15 {
+     left: 20%;
+     animation-delay: 2.5s;
+   }
+
+   #ls16 {
+     left: 16%;
+     animation-delay: 2.3s;
+   }
+
+   #ls17 {
+     left: 11%;
+     animation-delay: 1.3s;
+   }
+
+   #ls18 {
+     left: 7%;
+     animation-delay: 1.9s;
+   }
+
+   #ls19 {
+     left: 4%;
+     animation-delay: 2s;
+   }
+
+   #ls20 {
+     left: 1%;
+     animation-delay: 0.9s;
+   }
+
+
+    .synopsis{
+      border: 2px white solid;
+      border-style: dashed;
+    }
+    .castpic{
+      margin-top: 40px;
+      margin-left: 8px;
+      width: 96%;
+      height: 75%;
+      border: 2px white solid;
+      border-style: dashed;
+    }
+    video{
+      width: 100%;
+      margin-top: 3px;
+    }
+    h2{
+      text-align: center;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Brotherhood</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Cast</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <!--"By using the nav element i was able to help the viewer navigate from the home page to the cast page
+  Furthermore, By using Nav this shows a good well use of html semantic elements"-->
+  section>
+    <div>
+    <img class="castpic" src="img/castimage.jpg" alt="Thecrew"/>
+    </div>
+  </section>
+  <section>
+    <video controls poster="img/poster.jpg" >
+      <source src="vid/trailer.mp4" type="video/mp4" />
+      <source src="vid/trailer.ogv" type="video/ogg" />
+      <p>Sorry, your browser does not support the video element.
+         You can download the video <a href="vid/trailer.mp4">here</a>.
+      </p>
+      <!--"A fallback for browsers that does not support the video element so with the help of the link
+      the mp4 version will be displayed"-->
+     </video>
+  </section>
+  <div class="synopsis">
+    <h2>Synopsis</h2>
+    <p>Sam is facing up to the new world. He realises it also
+       comes with new problems and new challenges and which will require old friends to help him survive new dangers.
+       First, there was Kidulthood, then Adulthood, and now comes Noel Clarke's lastest instalment: Brotherhood.
+       Sam is facing up to the new world. He realises it also comes with new problems;
+      new challenges he must face which he knows, will require old friends to help him survive new dangers.
+    </p>
+
+  </div>
+  <div class="littlesquare" id="ls1"></div>
+  <div class="littlesquare" id="ls2"></div>
+  <div class="littlesquare" id="ls3"></div>
+  <div class="littlesquare" id="ls4"></div>
+  <div class="littlesquare" id="ls5"></div>
+  <div class="littlesquare" id="ls6"></div>
+  <div class="littlesquare" id="ls7"></div>
+  <div class="littlesquare" id="ls8"></div>
+  <div class="littlesquare" id="ls9"></div>
+  <div class="littlesquare" id="ls10"></div>
+  <div class="littlesquare" id="ls11"></div>
+  <div class="littlesquare" id="ls12"></div>
+  <div class="littlesquare" id="ls13"></div>
+  <div class="littlesquare" id="ls14"></div>
+  <div class="littlesquare" id="ls15"></div>
+  <div class="littlesquare" id="ls16"></div>
+  <div class="littlesquare" id="ls17"></div>
+  <div class="littlesquare" id="ls18"></div>
+  <div class="littlesquare" id="ls19"></div>
+  <div class="littlesquare" id="ls20"></div>
+  <div class="littlesquare" id="ls21"></div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="thefooter">P2606942</footer>
+  </body>
+</html>

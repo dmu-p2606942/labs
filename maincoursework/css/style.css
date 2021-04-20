@@ -1,0 +1,49 @@
+body{
+  background-image: url("../img/repeated-square-dark.png");
+}
+p,h1,h2{
+  color: white;
+}
+header{
+  color: white;
+  padding: 3px;
+    margin: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 27px;
+    font-family: monospace, sans-serif;
+    background-color:black;
+    border-style: dashed;
+    text-shadow: 4px 2px rgb(194, 50, 50);
+}
+/*"Again padding helped me centre the heading comfortably, And i used monospace because it looked cool, sans-serif was used
+for default, Also i thought the text shadow was really cool so gave the header a little touch of shadow"*/
+nav{
+  text-align: right;
+  margin-top: 30px;
+}
+/*"By using text allign and putting it to the right of the page,
+ i thought was a suitable idea to do so as i had included it in the proposal for the menu to be on the right to make it look professional*/
+ nav a{
+   text-decoration-color: black;
+   color: black;
+   padding: 10px;
+   background-color: white;
+   border-radius: 3px;
+   border: 2px black solid;
+   border-style: dashed;
+   text-shadow: 1px 2px rgb(194, 50, 50);
+   margin: 10px;
+ }
+ /*"Again i have gone for the border line style to be dashed and a repeat of this represents UNITY"*/
+ /*"by using the padding element i was able to centre the text properly inside the box", furthermore,
+ i chose the background colour to be white as the menu would need to stand out as the menu enables you to go from page to page.
+ I've also added some text shadow, the same as on the header to show unity.*/
+ footer{
+   padding-top: 7px;
+   width: 100vw;
+   overflow: hidden;
+   color: red;
+   background-color: rgb(0, 0, 0);
+   text-align: center;
+ }
