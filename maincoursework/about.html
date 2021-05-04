@@ -35,6 +35,15 @@
       float: left;
     }
 
+    .littlesquarescontainer{
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      overflow: hidden;
+    }
+
     .justnoel{
       margin-top: 30px;
       border: 2px red solid;
@@ -66,11 +75,12 @@
         opacity: 0.5;
       }
       100% {
-        top: 200vh;
+        top: 95%;
         transform: rotate(720deg);
         opacity: 1.5;
       }
     }
+
 
      .littlesquare{
       top: 101%;
@@ -264,8 +274,10 @@
       <source src="aud/Female_2 copy.mp3" type="audio/mpeg">
       <p>sorry, your browser does not support the audio element. However, you can download the mp3 format <a href="aud/Female_2 copy.mp3">here</a>
     </audio>
+    <!--"A fallback for browsers that does not support the video element so with the help of the link
+    the mp4 version will be displayed"--> 
   </div>
-
+  <div class="littlesquarescontainer">
   <div class="littlesquare" id="ls1"></div>
   <div class="littlesquare" id="ls2"></div>
   <div class="littlesquare" id="ls3"></div>
@@ -285,8 +297,8 @@
   <div class="littlesquare" id="ls17"></div>
   <div class="littlesquare" id="ls18"></div>
   <div class="littlesquare" id="ls19"></div>
-
-
+</div>
+<!--"all these div class elements are little boxes which are used for animations, as the red boxes rotate around in the background"-->
 
 
 

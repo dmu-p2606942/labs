@@ -15,10 +15,19 @@
        opacity: 0.5;
      }
      100% {
-       top: 200vh;
+       top: 95%;
        transform: rotate(720deg);
-       opacity: 1.5;
+       opacity: 1;
      }
+   }
+
+   .littlesquarescontainer{
+     position: fixed;
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     overflow: hidden;
    }
 
     .littlesquare{
@@ -152,7 +161,6 @@
       text-align: center;
     }
 
-
     </style>
   </head>
   <body>
@@ -166,10 +174,38 @@
     </nav>
     <!--"By using the nav element i was able to help the viewer navigate from the home page to the cast page
   Furthermore, By using Nav this shows a good well use of html semantic elements"-->
-  section>
+  <section>
     <div>
     <img class="castpic" src="img/castimage.jpg" alt="Thecrew"/>
     </div>
+  </section>
+  <section>
+    <p id="demo"></p>
+
+    <script>
+
+    var countDownDate = new Date("May 10, 2021 15:37:25").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date() .getTime();
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearinterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
   </section>
   <section>
     <video controls poster="img/poster.jpg" >
@@ -192,6 +228,8 @@
     </p>
 
   </div>
+
+  <div class="littlesquarescontainer">
   <div class="littlesquare" id="ls1"></div>
   <div class="littlesquare" id="ls2"></div>
   <div class="littlesquare" id="ls3"></div>
@@ -213,7 +251,7 @@
   <div class="littlesquare" id="ls19"></div>
   <div class="littlesquare" id="ls20"></div>
   <div class="littlesquare" id="ls21"></div>
-
+  </div>
 
 
 
