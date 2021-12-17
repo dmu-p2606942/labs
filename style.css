@@ -1,68 +1,15 @@
 body{
-  font-family: arial, helvetica, sans-serif;
+  background-image: url("../Img/terrazo.png");
+  color: white;
 }
-video {
-  width: 30%
-}
-video {
-  margin-top: 20px;
-}
-audio {
-  margin-top: 37px;
-}
-h1 {
+header{
+  color: red;
   text-align: center;
-  color:rgb(160, 217, 23)
+  font-size: 70px;
+  border-style: dashed;
 }
-h1{
-  background-color: rgb(32, 42, 32)
-}
-h1 {
-  border: 15px grey dotted;
-  margin-top: -8px
-}
-h1{
-  margin-left:-9px
-}
-h1{
-  margin-right: -9px
-}
-p {
-  color:rgb(160, 217, 23)
-}
-p {
-  background-color: rgb(32, 42, 32)
-}
-p {
-  margin-left: -9px
-}
-p {
-  margin-right: -9px
-}
-ul {
-  background-color: rgb(32, 42, 32)
-}
-ul {
-  color:rgb(160, 217, 23)
-}
-ul {
-  margin-left: -9px
-}
-ul {
-  margin-right: -9px
-}
-ul {
-  padding-top: 10px
-}
-ul {
-  padding-bottom: 10px
-}
-p {
-  padding-top: 10px
-}
-p {
-  padding-bottom: 10px
-}
-p {
-  padding-left: 5px
+footer{
+  color:red;
+  text-align: center;
+  background-color: White;
 }
