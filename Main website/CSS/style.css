@@ -1,0 +1,15 @@
+body{
+  background-image: url("../Img/terrazo.png");
+  color: white;
+}
+header{
+  color: red;
+  text-align: center;
+  font-size: 70px;
+  border-style: dashed;
+}
+footer{
+  color:red;
+  text-align: center;
+  background-color: White;
+}
